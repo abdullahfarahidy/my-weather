@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/favicon.png" type="image/png" rel="shortcut icon" />
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <meta name="author" content="Abdallah ahmed" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="holder headline">Weather Journal</div>
+      <div class="instru">
+        To know the weather in your region you have to provide us with your zip
+        code <br />
+        And tell us how you feel &#128512;
+      </div>
+      <div class="holder zip">
+        <label for="zip">Enter Zipcode here *</label>
+        <input type="text" id="zip" placeholder="enter zip code here" />
+      </div>
+      <div class="holder feel" id="filler">
+        <label for="feelings" class="leba">How are you feeling today?</label>
+        <textarea
+          class="myInput"
+          id="feelings"
+          placeholder="Enter your feelings here"
+          rows="4"
+          cols="40"
+        ></textarea>
+        <button id="generate" type="submit">Generate</button>
+      </div>
+      <div class="holder entry" id="antary">
+        <div class="title">Most Recent Entry</div>
+        <div id="entryHolder">
+          <div id="date"></div>
+          <div id="temp"></div>
+          <div id="content"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>

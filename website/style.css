@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/21/17/23/sky-4868218_1280.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#app{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.headline{
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  font-size: 2em;
+  padding: 5px;
+  text-align: center;
+  color: rgb(26, 57, 115);
+  font-weight: 600;
+  text-shadow: 2px 2px 2px violet;
+  border: 2px solid rgb(130, 186, 238);
+  border-style: dashed;
+  background-color: rgb(223, 234, 240);
+  cursor: pointer;
+}
+div .zip{
+    position: relative;
+    height: fit-content;
+    width: 60%;
+    background-color:rgba(118, 123, 148, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+div .zip:hover{
+    transform: scale(1.01);
+    transition: 1s ease;
+}
+label{
+    color: rgb(11, 1, 16);
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+#zip{
+    height: 30px;
+    width: 70%;
+    font-size: 20px; 
+    padding: 15px;  
+}
+.instru{
+    position: relative;
+    width: 70%;
+    height: fit-content;
+    background-color: rgba(205, 209, 227, 0.9);
+    margin-top: 15px;
+    text-shadow: 1px 1px 1px slateblue;
+    font-size: 28px;
+    color: rgb(31, 2, 46);
+    font-weight: 500;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(176, 146, 183, 0.2);;
+    border-radius: 10px;
+}
+#filler{
+    position: relative;
+    height: fit-content;
+    width: 70%;
+    background-color: rgba(118, 123, 148, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.leba{
+   width: fit-content;
+   height: fit-content;
+}
+.myInput{
+    height: fit-content;
+    width: 90%;
+    font-size: 21px;
+    padding: 7px;
+}
+#generate{
+    margin-top: 7px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 2em;
+    color: rgb(38, 83, 165);
+    border-style: none;
+    cursor: pointer;
+}
+#generate:hover{
+    transition: 1s ease;
+    transform: scale(1.08);
+}
+#antary{
+    position: relative;
+    width: 70%;
+    height: 280px;
+    background-color: rgba(118, 123, 148, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#entryHolder{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 40px;
+    font-size: 29px;
+}
+#date{
+    color: rgb(56, 27, 82);
+}
+#temp{
+    color: orangered;
+}
+#conten{
+    color: rgb(38, 53, 81);
+}
+.title{
+    color: rgb(55, 42, 67);
+    text-shadow: 1px 1px 1px purple;
+    font-size: 29px;
+    text-align: center;
+}
+
