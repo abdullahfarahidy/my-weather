@@ -7,7 +7,7 @@ const baseURI = "https://api.openweathermap.org/data/2.5/weather?zip=";
 
 //Get the date
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newdate = d.toString();
 
 // Event listener to add function to existing HTML DOM element
 generate.addEventListener('click', performAction);
@@ -21,7 +21,7 @@ function performAction(e) {
   getWeather(baseURI, newZip, apiKey)
     .then(function (userData) {
       // add data to POST request
-      postData('/add', { date: newDate, temp: userData.main.temp, newcontent })
+      postData('/add', { date: newdate, temp: userData.main.temp, newcontent })
     }).then(function (newData) {
       // call updateUI to update browser content
       updateUI()
@@ -74,9 +74,9 @@ const updateUI = async () => {
     // show icons on the page
    divs.forEach(div => div.style.opacity = '1');
     // update new entry values
-    document.getElementById('date').innerHTML = allData.date;
-    document.getElementById('temp').innerHTML = allData.temp;
-    document.getElementById('content').innerHTML = allData.newcontent;
+    document.getElementById('date').innerHTML =  "Date : "+ allData.date;
+    document.getElementById('temp').innerHTML =  "Temperature: " + allData.temp;
+    document.getElementById('content').innerHTML =  "it is really: " + allData.content;
   }
   catch (error) {
     console.log("error", error);
